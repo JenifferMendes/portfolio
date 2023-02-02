@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --font1: 'Cookie', cursive;
+    --font2: 'Roboto', sans-serif;
+    --color-01: #D759D9; 
+    --color-02: #F1A7F2; 
+    --color-03: #EDC4F2; 
+    --color-04: #8BD9D1; 
+    --color-05: #F2DAC4;
+    --color-06: #f7e0b4;
+}
+
+.invisibleMenu {
+    display: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--font2);
+}
+.navbar {
+    background-color: var(--color-04);
+    text-align: right;
+}
+.navbar > span {
+    font-size: 4rem;
+    color: var(--color-01);
+    border-radius: 50%;
+    padding: 5px;
+    border: 3px solid var(--color-01);
+    margin: 20px;
+
+}
+.menu {
+    display: none;
+    width: 100%;
+    /* display: flex;
+    justify-content: space-evenly; */
+    list-style-type: none;
+    background-color: var(--color-03);
+}
+.menu-option {
+    display: block;
+    text-decoration: none;
+    color: var(--color-01);
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid var(--color-01);
+}
+
+.welcome {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-02);
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55%;
+    background-color: var(--color-04);
+}
+
+.main-h1{
+    font-size: 3rem;
+    margin-left: px;
+    font-family: var(--font2);
+}
+
+.cursive {
+    display: block;
+    font-family: var(--font1);
+    font-size: 4.5rem;
+}
+
+.main-p {
+    font-family: var(--font2);
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+.right {
+    width: 100%;
+    height: 35%;
+    background-color: var(--color-05);
+}
+
+.imagem {
+    background-image: url(../imagens/koifofa.png);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+}
+
+.about {
+    background-color: var(--color-02);
+}
+
+.project {
+    background-color: var(--color-04);
+}
