@@ -11,12 +11,23 @@
     --font1: 'Cookie', cursive;
     --font2: 'Roboto', sans-serif;
     --font3: 'Noto Sans', sans-serif;
+    --color-00: #593959;
     --color-01: #D759D9;
     --color-02: #F1A7F2;
     --color-03: #EDC4F2;
     --color-04: #8BD9D1;
+    --color-07: #4C8C86;
+    --color-08: #305955;    
     --color-05: #F2DAC4;
+    --color-09: #59432E;
     --color-06: #f7e0b4;
+}
+.hyphenate {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-limit-chars: 6 3 3;
+    -webkit-hyphenate-limit-last: always;
+    -webkit-hyphenate-limit-zone: 8%;
 }
 
 .invisibleMenu {
@@ -27,7 +38,7 @@ body,
 html {
     width: 100%;
     height: 100vh;
-    font-family: var(--font2);
+    font-family: var(--font3);
 }
 
 .header {
@@ -42,7 +53,7 @@ html {
     text-align: right;
 }
 
-.navbar>span {
+.navbar > span {
     font-size: 3.3rem;
     color: var(--color-01);
     border-radius: 40%;
@@ -50,6 +61,11 @@ html {
     border: 2px solid var(--color-01);
     margin: 10px;
     margin-right: 15px;
+}
+
+.navbar > span:hover {
+    background-color: var(--color-02);
+    cursor: pointer;
 }
 
 .menu {
@@ -71,6 +87,10 @@ html {
     padding: 5px;
     border-top: 1px solid var(--color-01);
     padding: 10px;
+}
+
+.menu-option:hover {
+    background-color: var(--color-02);
 }
 
 .menu:last-child {
@@ -101,19 +121,18 @@ html {
     text-align: center;
     font-size: 3rem;
     margin-left: px;
-    font-family: var(--font2);
+    color: var(--color-08);
 }
 
 .cursive {
     display: block;
     font-family: var(--font1);
     font-size: 4rem;
-    text-shadow: 1px 1px 1px var(--color-0);
+    text-shadow: 1px 1px 1px var(--color-07);
 
 }
 
 .main-p {
-    font-family: var(--font2);
     font-size: 1.3rem;
     text-align: right;
 }
@@ -163,12 +182,11 @@ html {
 
 .card {
     background-color: rgba(255, 255, 255, 0.659);
-    margin: 0 auto;
-    width: 300px;
-    /* height: 600px; */
+    margin: 30px auto;
+    width: 90%;
     padding: 10px 0;
     border-radius: 20px;
-    box-shadow: 0px 0px 15px var(--color-01);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.256);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -180,14 +198,17 @@ html {
     margin-top: 10px;
     font-family: var(--font3);
     font-weight: 900;
+    margin: 0 70px;
+    border-bottom: 1px solid var(--color-00);
+    color: var(--color-00);
 }
 
 .about-text {
     text-align: justify;
     padding: 20px;
     text-indent: 30px;
-    font-family: var(--font3);
     font-size: 0.9rem;
+    color: var(--color-00);
 }
 
 .project {
@@ -195,17 +216,140 @@ html {
     padding: 100px 0;
 }
 
+.project-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 40px;
+    border-bottom: 1px solid var(--color-09);
+    color: var(--color-09);
+}
+
+.project-sub-title {
+    color: var(--color-09);
+    text-align: center;
+    margin: 20px 60px;
+    border-bottom: 1px solid var(--color-09);
+}
+.project-images {
+    display: flex;
+    padding: 10px;
+}
+
+/* .slider {
+    position: relative;
+    width: 150px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;  
+}
+
+.slide:not(:first-child) {
+    display: none;
+} */
+
+.project-image-portrait {
+    /* object-fit: contain; */
+    width: 150px;
+    height: 300px;
+    margin: 0 auto;
+    border: 2px solid var(--color-09);
+    box-shadow: 0px 0px 10px var(--color-00);
+    border-radius: 10px;
+}
+.project-image-landscape {
+    /* object-fit: contain; */
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    border: 2px solid var(--color-09);
+    box-shadow: 0px 0px 10px var(--color-00);
+    border-radius: 10px;
+}
+
+.project-container-images-landscape {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-text {
+    text-align: justify;
+    padding: 20px;
+    text-indent: 30px;
+    font-size: 0.9rem;
+    color: var(--color-00);
+}
+
+.project-tech {
+    color: var(--color-09);
+    font-size: 30px;
+    text-align: center;
+}
+
 .contact {
     background-color: var(--color-04);
     width: 100%;
     height: 100%;
-    padding: 100px 0;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.hifenizar {
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    -webkit-hyphenate-limit-chars: 6 3 3;
-    -webkit-hyphenate-limit-last: always;
-    -webkit-hyphenate-limit-zone: 8%;
+.contact-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto;
+}
+
+.contact-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-07);
+    margin: 30px;
+    font-size: 1.5rem;
+    background-color: #BDFFF8;
+    border-radius: 10%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px var(--color-07);
+}
+
+.contact-detail:hover {
+    background-color: var(--color-07);
+    color:rgba(255, 255, 255, 0.681);
+    transform: translate(0px,10px);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    transition-property: transform;
+}
+
+footer {
+    background-color: var(--color-03);
+    text-align: center;
+    font-family: var(--font3);
+    padding: 5px 0;
 }
