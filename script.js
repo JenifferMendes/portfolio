@@ -3,5 +3,6 @@ function clickMenu() {
         options.style.display = "none";
     } else {
         options.style.display = "block";
+        navbar.style.background = "#EDC4F2";      
     }
 }

@@ -1,18 +1,20 @@
 @charset "utf-8";
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
 }
-:root{
+
+:root {
     --font1: 'Cookie', cursive;
     --font2: 'Roboto', sans-serif;
-    --color-01: #D759D9; 
-    --color-02: #F1A7F2; 
-    --color-03: #EDC4F2; 
-    --color-04: #8BD9D1; 
+    --font3: 'Noto Sans', sans-serif;
+    --color-01: #D759D9;
+    --color-02: #F1A7F2;
+    --color-03: #EDC4F2;
+    --color-04: #8BD9D1;
     --color-05: #F2DAC4;
     --color-06: #f7e0b4;
 }
@@ -21,32 +23,45 @@
     display: none;
 }
 
-body, html {
+body,
+html {
     width: 100%;
     height: 100vh;
     font-family: var(--font2);
 }
+
+.header {
+    width: 100%;
+    position: fixed;
+    box-shadow: 1px 2px 6px var(--color-01);
+}
+
 .navbar {
-    background-color: var(--color-04);
+    position: relative;
+    background-color: var(--color-03);
     text-align: right;
 }
-.navbar > span {
-    font-size: 4rem;
-    color: var(--color-01);
-    border-radius: 50%;
-    padding: 5px;
-    border: 3px solid var(--color-01);
-    margin: 20px;
 
+.navbar>span {
+    font-size: 3.3rem;
+    color: var(--color-01);
+    border-radius: 40%;
+    padding: 5px;
+    border: 2px solid var(--color-01);
+    margin: 10px;
+    margin-right: 15px;
 }
+
 .menu {
     display: none;
+    position: absolute;
     width: 100%;
     /* display: flex;
     justify-content: space-evenly; */
     list-style-type: none;
     background-color: var(--color-03);
 }
+
 .menu-option {
     display: block;
     text-decoration: none;
@@ -54,7 +69,13 @@ body, html {
     font-size: 2rem;
     text-align: center;
     padding: 5px;
-    border: 1px solid var(--color-01);
+    border-top: 1px solid var(--color-01);
+    padding: 10px;
+}
+
+.menu:last-child {
+    border-bottom: 1px solid var(--color-01);
+    box-shadow: 1px 2px 6px var(--color-01);
 }
 
 .welcome {
@@ -73,9 +94,11 @@ body, html {
     width: 100%;
     height: 55%;
     background-color: var(--color-04);
+    margin-top: 80px;
 }
 
-.main-h1{
+.main-h1 {
+    text-align: center;
     font-size: 3rem;
     margin-left: px;
     font-family: var(--font2);
@@ -84,7 +107,9 @@ body, html {
 .cursive {
     display: block;
     font-family: var(--font1);
-    font-size: 4.5rem;
+    font-size: 4rem;
+    text-shadow: 1px 1px 1px var(--color-0);
+
 }
 
 .main-p {
@@ -95,12 +120,22 @@ body, html {
 
 .right {
     width: 100%;
-    height: 35%;
+    height: 25%;
     background-color: var(--color-05);
 }
 
-.imagem {
+/* .image {
     background-image: url(../imagens/koifofa.png);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+} */
+
+.image {
+    background-image: url(../imagens/koioi.png);
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -111,8 +146,66 @@ body, html {
 
 .about {
     background-color: var(--color-02);
+    width: 100%;
+    padding: 100px 0;
+}
+
+.image-jeniffer {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px var(--color-01);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.659);
+    margin: 0 auto;
+    width: 300px;
+    /* height: 600px; */
+    padding: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px var(--color-01);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+    font-family: var(--font3);
+    font-weight: 900;
+}
+
+.about-text {
+    text-align: justify;
+    padding: 20px;
+    text-indent: 30px;
+    font-family: var(--font3);
+    font-size: 0.9rem;
 }
 
 .project {
+    background-color: var(--color-05);
+    padding: 100px 0;
+}
+
+.contact {
     background-color: var(--color-04);
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+}
+
+.hifenizar {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-limit-chars: 6 3 3;
+    -webkit-hyphenate-limit-last: always;
+    -webkit-hyphenate-limit-zone: 8%;
 }
