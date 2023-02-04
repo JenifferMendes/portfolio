@@ -115,6 +115,7 @@ html {
     height: 55%;
     background-color: var(--color-04);
     margin-top: 80px;
+    border-bottom: 1px solid var(--color-07);
 }
 
 .main-h1 {
@@ -128,7 +129,7 @@ html {
     display: block;
     font-family: var(--font1);
     font-size: 4rem;
-    text-shadow: 1px 1px 1px var(--color-07);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.891);
 
 }
 
@@ -141,6 +142,7 @@ html {
     width: 100%;
     height: 25%;
     background-color: var(--color-05);
+    border-bottom: 1px solid var(--color-01);
 }
 
 /* .image {
@@ -210,7 +212,7 @@ html {
     font-size: 0.9rem;
     color: var(--color-00);
 }
-
+/* ----------------------- projeto */
 .project {
     background-color: var(--color-05);
     padding: 100px 0;
@@ -230,53 +232,87 @@ html {
     margin: 20px 60px;
     border-bottom: 1px solid var(--color-09);
 }
+
 .project-images {
     display: flex;
     padding: 10px;
 }
 
-/* .slider {
-    position: relative;
-    width: 150px;
+.container-images-slides {
+    width: 300px;
     height: 300px;
     overflow: hidden;
+    margin: 0 auto;
+}
+.navigation {
+    display: flex;
+    margin: 0 auto;
+}
+
+.bar {
+    width: 40px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid var(--color-09);
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.bar:hover {
+    background-color: var(--color-09);
+}
+
+input {
+    display: none;
+}
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
 }
 
 .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;  
+    width: 20%;
+    transition: 0.6s;
 }
 
-.slide:not(:first-child) {
-    display: none;
-} */
+.slide img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
 
 .project-image-portrait {
-    /* object-fit: contain; */
     width: 150px;
     height: 300px;
     margin: 0 auto;
-    border: 2px solid var(--color-09);
-    box-shadow: 0px 0px 10px var(--color-00);
     border-radius: 10px;
+
 }
+
 .project-image-landscape {
-    /* object-fit: contain; */
     width: 300px;
     height: 150px;
     margin: 0 auto;
-    border: 2px solid var(--color-09);
-    box-shadow: 0px 0px 10px var(--color-00);
     border-radius: 10px;
+    padding: 5px;
 }
 
-.project-container-images-landscape {
-    display: flex;
-    flex-direction: column;
-}
 
 .project-text {
     text-align: justify;
@@ -291,7 +327,7 @@ html {
     font-size: 30px;
     text-align: center;
 }
-
+/* ----------------------- contato */
 .contact {
     background-color: var(--color-04);
     width: 100%;
@@ -351,5 +387,8 @@ footer {
     background-color: var(--color-03);
     text-align: center;
     font-family: var(--font3);
+    font-size: 1.2rem;
     padding: 5px 0;
+    border-top: 3px solid var(--color-01);
+    color: var(--color-00);
 }
