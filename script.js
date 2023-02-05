@@ -1,10 +1,12 @@
 function clickMenu() {
-    if (options.style.display == "block") {
-        options.style.display = "none";
-    } else {
-        options.style.display = "block";
-        navbar.style.background = "#EDC4F2";      
-    }
+    if (window.matchMedia("(max-width: 768px)").matches){
+        if (options.style.display == "block") {
+            options.style.display = "none";
+        } else {
+            options.style.display = "block";
+            navbar.style.background = "#EDC4F2";      
+        }
+    } 
 }
 
 window.addEventListener("scroll", () => {
@@ -19,10 +21,3 @@ window.addEventListener("scroll", () => {
 home.addEventListener("click", () => {
     window.scrollTo(0,0);
 })
-
-
-// if(window.matchMedia("(min-width: 768px)").matches) {
-//     document.querySelector(".menu").onclick = function clickMenu() {
-//         return false;
-//     };
-// }

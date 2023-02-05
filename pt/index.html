@@ -20,6 +20,8 @@
 
 </head>
 <body>
+    <span id="teste"></span>
+    <div id="teste"></div>
     <section>
         <header class="header">
             <nav  id="navbar" class="navbar">
@@ -34,8 +36,10 @@
     </section>
     <section class="welcome">
         <div class="left">
-            <h1 class="main-h1">Olá, eu sou <span class="cursive">Jeniffer Mendes</span></h1>
-            <p class="main-p">desenvolvedora front-end </p>
+            <div class="content">
+                <h1 class="main-h1">Olá, eu sou <span class="cursive">Jeniffer Mendes</span></h1>
+                <p class="main-p">desenvolvedora front-end </p>
+            </div>
         </div>
         <div class="right">
             <div class="image-koicute" id="img"></div>
@@ -82,61 +86,69 @@
     </section>
     <section id="project" class="project">
         <h1 class="project-title">Principais Projetos</h1>
-        <div class="project-card">
-            <h2 class="project-sub-title">Gestor Financeiro</h2>
-            <div class="project-card-flex">
-                <div class="project-div-flex1">
-                    <div class="project-images">
-                        <img class="project-image-portrait" src="https://user-images.githubusercontent.com/115995202/216671156-b9140322-96ef-48ba-a9a4-9a02d9c9b611.png" alt="home do projeto Gestor Financeiro">
-                        <img class="project-image-portrait" src="https://user-images.githubusercontent.com/115995202/216671128-8e6af89c-4621-4371-8fef-312f3125ba31.gif" alt="gif do projeto Gestor Financeiro">
+        <div class="container-projects">
+            <div class="project-card">
+                <h2 class="project-sub-title">Gestor Financeiro</h2>
+                <div class="project-card-flex">
+                    <div class="project-div-flex1">
+                        <div class="project-images">
+                            <img class="project-image-portrait" src="https://user-images.githubusercontent.com/115995202/216671156-b9140322-96ef-48ba-a9a4-9a02d9c9b611.png" alt="home do projeto Gestor Financeiro">
+                            <img class="project-image-portrait" src="https://user-images.githubusercontent.com/115995202/216671128-8e6af89c-4621-4371-8fef-312f3125ba31.gif" alt="gif do projeto Gestor Financeiro">
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" target="_blank" class="project-link">Site</a>
-                        <a href="https://github.com/JenifferMendes/aap-rbranas-projeto-finaceiro" target="_blank" class="project-link">Github</a>
-                    </div>
-                </div>
-                <div class="project-div-flex2">
-                    <p class="project-text hyphenate" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laboriosam iusto nisi quidem alias eligendi ducimus error beatae autem magnam eveniet! Ratione dignissimos omnis eos repudiandae provident obcaecati consectetur necessitatibus, ipsa quaerat sapiente!</p>
-                    <div class="project-tech">
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-js"></i>
+                    <div class="project-div-flex2">
+                        <p class="project-text hyphenate" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laboriosam iusto nisi quidem alias eligendi ducimus error beatae autem magnam eveniet! Ratione dignissimos omnis eos repudiandae provident obcaecati consectetur necessitatibus, ipsa quaerat sapiente!</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-link">Site</a>
+                            <a href="https://github.com/JenifferMendes/aap-rbranas-projeto-finaceiro" target="_blank" class="project-link">Github</a>
+                        </div>
+                        <div class="project-tech">
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-js"></i>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="project-card">
+                <h2 class="project-sub-title">Página de Login</h2>
+                <div class="project-card-flex">
+                    <div class="project-div-flex1">
+                        <div class="container-images-slides">
+                            <div class="slides">
+                                <input type="radio" name="slide" id="slide1" checked>
+                                <input type="radio" name="slide" id="slide2">
+                                <input type="radio" name="slide" id="slide3">
+                                <div class="slide s1">
+                                    <img class="project-image-landscape" src="https://user-images.githubusercontent.com/115995202/216677716-9356c334-4738-4ebb-ae08-096cc369cf49.png" alt="gif do projeto Gestor Financeiro">
+                                </div>
+                                <div class="slide s2">
+                                    <img class="project-image-portrait centralize" src="https://user-images.githubusercontent.com/115995202/216677713-3e228fcf-126a-49ca-bde2-e86a59068c5a.png" alt="home do projeto Gestor Financeiro">
+                                </div>
+                                <div class="slide s3">
+                                    <img class="project-image-landscape" src="https://user-images.githubusercontent.com/115995202/216677717-31063209-be0d-42f6-8f03-628850ac3514.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navigation">
+                            <label class="bar" for="slide1"></label>
+                            <label class="bar" for="slide2"></label>
+                            <label class="bar" for="slide3"></label>
+                        </div>
+                    </div>
+                    <div class="project-div-flex2">
+                        <p class="project-text hyphenate" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laboriosam iusto nisi quidem alias eligendi ducimus error beatae autem magnam eveniet! Ratione dignissimos omnis eos repudiandae provident obcaecati consectetur necessitatibus, ipsa quaerat sapiente!</p>
+                        <div class="project-links">
+                            <a href="https://jeniffermendes.github.io/meus-estudos/curso-em-video/html-css/modulo4/desafios/d015/index.html" target="_blank" class="project-link">Site</a>
+                            <a href="https://github.com/JenifferMendes/meus-estudos/tree/main/curso-em-video/html-css/modulo4/desafios/d015" target="_blank" class="project-link">Github</a>
+                        </div>
+                        <div class="project-tech">
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-html5"></i>
+                        </div>
+                    </div>
+                </div>
         </div>
-        <div class="project-card">
-            <h2 class="project-sub-title">Página de Login</h2>
-            <div class="container-images-slides">
-                <div class="slides">
-                    <input type="radio" name="slide" id="slide1" checked>
-                    <input type="radio" name="slide" id="slide2">
-                    <input type="radio" name="slide" id="slide3">
-                    <div class="slide s1">
-                        <img class="project-image-portrait centralize" src="https://user-images.githubusercontent.com/115995202/216677713-3e228fcf-126a-49ca-bde2-e86a59068c5a.png" alt="home do projeto Gestor Financeiro">
-                    </div>
-                    <div class="slide s2">
-                        <img class="project-image-landscape" src="https://user-images.githubusercontent.com/115995202/216677716-9356c334-4738-4ebb-ae08-096cc369cf49.png" alt="gif do projeto Gestor Financeiro">
-                    </div>
-                    <div class="slide s3">
-                        <img class="project-image-landscape" src="https://user-images.githubusercontent.com/115995202/216677717-31063209-be0d-42f6-8f03-628850ac3514.png">
-                    </div>
-                </div>
-            </div>
-            <div class="navigation">
-                <label class="bar" for="slide1"></label>
-                <label class="bar" for="slide2"></label>
-                <label class="bar" for="slide3"></label>
-            </div>
-            <div class="project-links">
-                <a href="https://jeniffermendes.github.io/meus-estudos/curso-em-video/html-css/modulo4/desafios/d015/index.html" target="_blank" class="project-link">Site</a>
-                <a href="https://github.com/JenifferMendes/meus-estudos/tree/main/curso-em-video/html-css/modulo4/desafios/d015" target="_blank" class="project-link">Github</a>
-            </div>
-            <p class="project-text hyphenate" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laboriosam iusto nisi quidem alias eligendi ducimus error beatae autem magnam eveniet! Ratione dignissimos omnis eos repudiandae provident obcaecati consectetur necessitatibus, ipsa quaerat sapiente!</p>
-            <div class="project-tech">
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-html5"></i>
-            </div>
         </div>
     </section>
     <section id="contact" class="contact">

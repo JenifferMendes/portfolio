@@ -124,6 +124,12 @@ html {
     flex-direction: column;
 }
 
+.left .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .left {
     display: flex;
     flex-direction: column;
@@ -198,7 +204,7 @@ html {
 .about-card {
     background-color: rgba(255, 255, 255, 0.659);
     margin: 30px auto;
-    width: 90%;
+    width: min(90%, 1200px);
     padding: 10px 0;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.256);
@@ -207,7 +213,7 @@ html {
     justify-content: space-between;
 }
 .about-card-tech {
-    width: 90%;
+    width: min(90%, 1200px);
     background-color: rgba(255, 255, 255, 0.659);
     margin: 30px auto;
     padding: 10px 0;
@@ -282,12 +288,15 @@ html {
 .project {
     background-color: var(--color-05);
     padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-card {
     background-color: rgba(255, 255, 255, 0.659);
     margin: 30px auto;
-    width: 90%;
+    width: min(90%, 750px);
     padding: 10px 0;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.256);
@@ -297,11 +306,13 @@ html {
 }
 
 .project-title {
+    width: fit-content;
+
     text-align: center;
     font-size: 2rem;
-    margin: 0 30px;
     border-bottom: 1px solid var(--color-09);
     color: var(--color-09);
+    padding-top: 30px;
 }
 
 .project-sub-title {
@@ -414,6 +425,27 @@ input {
     background-color: var(--color-05);
     color: var(--color-09);
 }
+
+.project-card-flex {
+    /* display: flex;
+    justify-content: space-evenly; */
+    margin-bottom: 20px;
+}
+
+.project-div-flex1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .project-div-flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+} */
 
 
 .project-text {
