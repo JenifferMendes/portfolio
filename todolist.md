@@ -9,6 +9,7 @@
 
 06/02
 - [ ] media query - tablet (começando)
+  - [ ] colocar os botoes embaixo do texto.
 - [ ] media query - pc/telas grandes
 - [ ] marcar no navegador qual slide estou
 - [ ] colocar textinhos bonitinhos nas descrições das coisas.
