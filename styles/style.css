@@ -178,7 +178,7 @@ html {
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom right;
     width: 100%;
     height: 100%;
 }
@@ -334,17 +334,19 @@ input {
 .project-links {
     display: flex;
     justify-content: center;
-    margin-left: 30px;
 }
 
 .project-link {
     text-decoration: none;
+    text-align: center;
     color: white;
+    width: 150px;
     background-color: var(--color-09);
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 1px solid var(--color-09);
     border-radius: 10px;
+    font-size: 0.8rem;
 }
 
 .project-link:hover {
