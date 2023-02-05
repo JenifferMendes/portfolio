@@ -34,6 +34,11 @@
     display: none;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 body,
 html {
     width: 100%;
@@ -90,8 +95,6 @@ html {
     display: none;
     position: absolute;
     width: 100%;
-    /* display: flex;
-    justify-content: space-evenly; */
     list-style-type: none;
     background-color: var(--color-03);
 }
@@ -138,7 +141,7 @@ html {
 
 .main-h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-left: px;
     color: var(--color-08);
 }
@@ -146,14 +149,15 @@ html {
 .cursive {
     display: block;
     font-family: var(--font1);
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.891);
-
 }
 
 .main-p {
-    font-size: 1.3rem;
-    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 30px;
+    color: var(--color-08);
 }
 
 .right {
@@ -163,17 +167,11 @@ html {
     border-bottom: 1px solid var(--color-01);
 }
 
-/* .image {
-    background-image: url(../imagens/koifofa.png);
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 100%;
-    height: 100%;
-} */
+.image-koicute {
+    display: none;
+}
 
-.image {
+.image-koihi{
     background-image: url(../imagens/koioi.png);
     background-size: contain;
     background-attachment: fixed;
@@ -200,7 +198,7 @@ html {
     box-shadow: 0px 0px 5px var(--color-01);
 }
 
-.card {
+.about-card {
     background-color: rgba(255, 255, 255, 0.659);
     margin: 30px auto;
     width: 90%;
@@ -210,6 +208,33 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.about-card-tech {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.659);
+    margin: 30px auto;
+    padding: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.256);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto;
+    margin-top: 20px;
+}
+
+.about-tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 
 .about-title {
@@ -223,17 +248,50 @@ html {
     color: var(--color-00);
 }
 
+.about-title-tech {
+    text-align: center;
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--color-00);
+    color: var(--color-00);
+    margin-top: 20px;
+}
+
+
+.about-tech > i {
+    font-size: 3rem; 
+    color: var(--color-02);
+}
+
+.about-tech > p {
+    color: var(--color-00);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
 .about-text {
     text-align: justify;
     padding: 20px;
     text-indent: 30px;
     font-size: 0.9rem;
+    font-weight: 600;
     color: var(--color-00);
 }
 /* ----------------------- projeto */
 .project {
     background-color: var(--color-05);
     padding: 100px 0;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.659);
+    margin: 30px auto;
+    width: 90%;
+    padding: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.256);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-title {
@@ -253,6 +311,7 @@ html {
 
 .project-images {
     display: flex;
+    justify-content: center;
     padding: 10px;
 }
 
@@ -319,7 +378,7 @@ input {
 .project-image-portrait {
     width: 150px;
     height: 300px;
-    margin: 0 auto;
+    margin: 0 10px;
     border-radius: 10px;
 }
 
@@ -340,9 +399,9 @@ input {
     text-decoration: none;
     text-align: center;
     color: white;
-    width: 150px;
+    width: 100px;
     background-color: var(--color-09);
-    margin: 10px;
+    margin: 0 10px;
     padding: 10px;
     border: 1px solid var(--color-09);
     border-radius: 10px;
@@ -365,7 +424,7 @@ input {
 
 .project-tech {
     color: var(--color-09);
-    font-size: 30px;
+    font-size: 2.3rem;
     text-align: center;
 }
 /* ----------------------- contato */
@@ -432,4 +491,8 @@ footer {
     padding: 5px 0;
     border-top: 3px solid var(--color-01);
     color: var(--color-00);
+}
+
+.centralize {
+    margin: 0 auto;
 }

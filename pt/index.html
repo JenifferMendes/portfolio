@@ -24,10 +24,10 @@
         <header class="header">
             <nav  id="navbar" class="navbar">
                 <span onclick="clickMenu()" class="material-symbols-outlined">menu</span>
-                <ul id="options" class="menu">
-                    <li><a onclick="clickMenu()" class="menu-option" href="#about">Sobre</a></li>
-                    <li><a onclick="clickMenu()" class="menu-option" href="#project">Projetos</a></li>
-                    <li><a onclick="clickMenu()" class="menu-option" href="#contact">Contato</a></li>
+                <ul id="options" class="menu" onclick="clickMenu()">
+                    <li><a class="menu-option" href="#about">Sobre</a></li>
+                    <li><a class="menu-option" href="#project">Projetos</a></li>
+                    <li><a class="menu-option" href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,37 +38,70 @@
             <p class="main-p">desenvolvedora front-end </p>
         </div>
         <div class="right">
-            <section class="image" id="img">
-            <!-- <img src="../imagens/koifofa.png" alt="icon da koiziny"> -->
+            <div class="image-koicute" id="img"></div>
+            <div class="image-koihi" id="img"></div>
         </div>
     </section>
     <section id="about" class="about">
-        <div class="card">
+        <div class="about-card">
             <img  class="image-jeniffer" src="../imagens/jeniffer.jpg" alt="foto de Jeniffer Mendes">
-            <h1 class="about-title">Sobre Mim</h1>
-            <p class="about-text hyphenate">Atualmente sou uma estudante autodidata de JavaScript, HTML e CSS, com foco em Desenvolvimento Web Front-end e criadora de conteúdo na plataforma Twitch, faço livestream com conteúdos relacionados aos meus estudos de programação. Tenho um projeto no canal chamado JKode, com repositório no GitHub, no qual tem como objetivo documentar a minha jornada como desenvolvedora front-end, e ainda possuo outro repositório chamado “meus estudos” onde compartilho todos os meus exercícios, anotações e desafios que estou realizando tanto ao vivo como nos bastidores. </p>
+            <div class="about-information">
+                <h1 class="about-title">Sobre Mim</h1>
+                <p class="about-text hyphenate">Atualmente sou uma estudante autodidata de JavaScript, HTML e CSS, com foco em Desenvolvimento Web Front-end e criadora de conteúdo na plataforma Twitch, faço livestream com conteúdos relacionados aos meus estudos de programação. Tenho um projeto no canal chamado JKode, com repositório no GitHub, no qual tem como objetivo documentar a minha jornada como desenvolvedora front-end, e ainda possuo outro repositório chamado “meus estudos” onde compartilho todos os meus exercícios, anotações e desafios que estou realizando tanto ao vivo como nos bastidores. </p>
+            </div>
+        </div>
+        <div class="about-card-tech">
+            <h1 class="about-title-tech">Tecnologias e Ferramentas</h1>
+            <div class="about-tech-grid">
+                <div class="about-tech">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="about-tech">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="about-tech">
+                    <i class="fab fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="about-tech">
+                    <i class="fab fa-git-alt"></i>
+                    <p>Git</p>
+                </div>
+                <div class="about-tech">
+                    <i class="fab fa-github"></i>
+                    <p>GitHub</p>
+                </div>
+            </div>
         </div>
     </section>
     <section id="project" class="project">
         <h1 class="project-title">Principais Projetos</h1>
-        <div class="card">
+        <div class="project-card">
             <h2 class="project-sub-title">Gestor Financeiro</h2>
-            <div class="project-images">
-                <img class="project-image-portrait" src="https://user-images.githubusercontent.com/115995202/216671156-b9140322-96ef-48ba-a9a4-9a02d9c9b611.png" alt="home do projeto Gestor Financeiro">
-                <img class="project-image-portrait" src="https://user-images.githubusercontent.com/115995202/216671128-8e6af89c-4621-4371-8fef-312f3125ba31.gif" alt="gif do projeto Gestor Financeiro">
-            </div>
-            <div class="project-links">
-                <a href="#" target="_blank" class="project-link">Veja aqui</a>
-                <a href="https://github.com/JenifferMendes/aap-rbranas-projeto-finaceiro" target="_blank" class="project-link">Repositório Github</a>
-            </div>
-            <p class="project-text hyphenate" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laboriosam iusto nisi quidem alias eligendi ducimus error beatae autem magnam eveniet! Ratione dignissimos omnis eos repudiandae provident obcaecati consectetur necessitatibus, ipsa quaerat sapiente!</p>
-            <div class="project-tech">
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-js"></i>
+            <div class="project-card-flex">
+                <div class="project-div-flex1">
+                    <div class="project-images">
+                        <img class="project-image-portrait" src="https://user-images.githubusercontent.com/115995202/216671156-b9140322-96ef-48ba-a9a4-9a02d9c9b611.png" alt="home do projeto Gestor Financeiro">
+                        <img class="project-image-portrait" src="https://user-images.githubusercontent.com/115995202/216671128-8e6af89c-4621-4371-8fef-312f3125ba31.gif" alt="gif do projeto Gestor Financeiro">
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="project-link">Site</a>
+                        <a href="https://github.com/JenifferMendes/aap-rbranas-projeto-finaceiro" target="_blank" class="project-link">Github</a>
+                    </div>
+                </div>
+                <div class="project-div-flex2">
+                    <p class="project-text hyphenate" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laboriosam iusto nisi quidem alias eligendi ducimus error beatae autem magnam eveniet! Ratione dignissimos omnis eos repudiandae provident obcaecati consectetur necessitatibus, ipsa quaerat sapiente!</p>
+                    <div class="project-tech">
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-js"></i>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card">
+        <div class="project-card">
             <h2 class="project-sub-title">Página de Login</h2>
             <div class="container-images-slides">
                 <div class="slides">
@@ -76,7 +109,7 @@
                     <input type="radio" name="slide" id="slide2">
                     <input type="radio" name="slide" id="slide3">
                     <div class="slide s1">
-                        <img class="project-image-portrait" src="https://user-images.githubusercontent.com/115995202/216677713-3e228fcf-126a-49ca-bde2-e86a59068c5a.png" alt="home do projeto Gestor Financeiro">
+                        <img class="project-image-portrait centralize" src="https://user-images.githubusercontent.com/115995202/216677713-3e228fcf-126a-49ca-bde2-e86a59068c5a.png" alt="home do projeto Gestor Financeiro">
                     </div>
                     <div class="slide s2">
                         <img class="project-image-landscape" src="https://user-images.githubusercontent.com/115995202/216677716-9356c334-4738-4ebb-ae08-096cc369cf49.png" alt="gif do projeto Gestor Financeiro">
@@ -92,8 +125,8 @@
                 <label class="bar" for="slide3"></label>
             </div>
             <div class="project-links">
-                <a href="https://jeniffermendes.github.io/meus-estudos/curso-em-video/html-css/modulo4/desafios/d015/index.html" target="_blank" class="project-link">Veja aqui</a>
-                <a href="https://github.com/JenifferMendes/meus-estudos/tree/main/curso-em-video/html-css/modulo4/desafios/d015" target="_blank" class="project-link">Repositório Github</a>
+                <a href="https://jeniffermendes.github.io/meus-estudos/curso-em-video/html-css/modulo4/desafios/d015/index.html" target="_blank" class="project-link">Site</a>
+                <a href="https://github.com/JenifferMendes/meus-estudos/tree/main/curso-em-video/html-css/modulo4/desafios/d015" target="_blank" class="project-link">Github</a>
             </div>
             <p class="project-text hyphenate" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laboriosam iusto nisi quidem alias eligendi ducimus error beatae autem magnam eveniet! Ratione dignissimos omnis eos repudiandae provident obcaecati consectetur necessitatibus, ipsa quaerat sapiente!</p>
             <div class="project-tech">

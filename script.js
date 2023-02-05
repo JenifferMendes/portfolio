@@ -19,3 +19,10 @@ window.addEventListener("scroll", () => {
 home.addEventListener("click", () => {
     window.scrollTo(0,0);
 })
+
+
+// if(window.matchMedia("(min-width: 768px)").matches) {
+//     document.querySelector(".menu").onclick = function clickMenu() {
+//         return false;
+//     };
+// }
