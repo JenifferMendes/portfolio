@@ -24,9 +24,9 @@
             <nav  id="navbar" class="navbar">
                 <span onclick="clickMenu()" class="material-symbols-outlined">menu</span>
                 <ul id="options" class="menu">
-                    <li><a class="menu-option" href="#about">Sobre</a></li>
-                    <li><a class="menu-option" href="#project">Projetos</a></li>
-                    <li><a class="menu-option" href="#contact">Contato</a></li>
+                    <li><a onclick="clickMenu()" class="menu-option" href="#about">Sobre</a></li>
+                    <li><a onclick="clickMenu()" class="menu-option" href="#project">Projetos</a></li>
+                    <li><a onclick="clickMenu()" class="menu-option" href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -55,6 +55,10 @@
             <div class="project-images">
                 <img class="project-image-portrait" src="https://user-images.githubusercontent.com/115995202/216671156-b9140322-96ef-48ba-a9a4-9a02d9c9b611.png" alt="home do projeto Gestor Financeiro">
                 <img class="project-image-portrait" src="https://user-images.githubusercontent.com/115995202/216671128-8e6af89c-4621-4371-8fef-312f3125ba31.gif" alt="gif do projeto Gestor Financeiro">
+            </div>
+            <div class="project-links">
+                <a href="#" target="_blank" class="project-link">Veja aqui</a>
+                <a href="https://github.com/JenifferMendes/aap-rbranas-projeto-finaceiro" target="_blank" class="project-link">Repositório Github</a>
             </div>
             <p class="project-text hyphenate" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laboriosam iusto nisi quidem alias eligendi ducimus error beatae autem magnam eveniet! Ratione dignissimos omnis eos repudiandae provident obcaecati consectetur necessitatibus, ipsa quaerat sapiente!</p>
             <div class="project-tech">
@@ -85,6 +89,10 @@
                 <label class="bar" for="slide1"></label>
                 <label class="bar" for="slide2"></label>
                 <label class="bar" for="slide3"></label>
+            </div>
+            <div class="project-links">
+                <a href="#" target="_blank" class="project-link">Veja aqui</a>
+                <a href="https://github.com/JenifferMendes/aap-rbranas-projeto-finaceiro" target="_blank" class="project-link">Repositório Github</a>
             </div>
             <p class="project-text hyphenate" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laboriosam iusto nisi quidem alias eligendi ducimus error beatae autem magnam eveniet! Ratione dignissimos omnis eos repudiandae provident obcaecati consectetur necessitatibus, ipsa quaerat sapiente!</p>
             <div class="project-tech">
@@ -117,6 +125,9 @@
             </a>
         </div>
     </section>
+    <button id="home" class="home">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
     <script src="../script.js"></script>
     <footer>
         <p> © 2023 Jeniffer Mendes</p>

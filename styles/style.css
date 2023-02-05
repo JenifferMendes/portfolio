@@ -42,6 +42,23 @@ html {
     background-color: var(--color-03);
 }
 
+.home {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    color: var(--color-01);
+    background-color: var(--color-03);
+    border-radius: 40%;
+    border: 1px solid var(--color-01);
+    box-shadow: 3px 3px 1px var(--color-01);
+
+    /* transform: translate(-50%); */
+
+}
+
 .header {
     width: 100%;
     position: fixed;
@@ -304,7 +321,6 @@ input {
     height: 300px;
     margin: 0 auto;
     border-radius: 10px;
-
 }
 
 .project-image-landscape {
@@ -313,6 +329,27 @@ input {
     margin: 0 auto;
     border-radius: 10px;
     padding: 5px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-09);
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid var(--color-09);
+    border-radius: 10px;
+}
+
+.project-link:hover {
+    background-color: var(--color-05);
+    color: var(--color-09);
 }
 
 
