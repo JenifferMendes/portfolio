@@ -220,9 +220,12 @@ html {
 }
 
 .about-tech-grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto; */
     margin-top: 20px;
 }
 
@@ -232,6 +235,7 @@ html {
     justify-content: center;
     align-items: center;
     margin: 10px;
+    width: 90px;
 }
 
 .about-title {
