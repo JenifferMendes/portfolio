@@ -59,9 +59,6 @@ html {
     border-radius: 40%;
     border: 1px solid var(--color-01);
     box-shadow: 3px 3px 1px var(--color-01);
-
-    /* transform: translate(-50%); */
-
 }
 
 .header {
@@ -257,13 +254,14 @@ html {
 }
 
 
-.about-tech > i {
+.about-tech > i, .about-tech > span {
     font-size: 3rem; 
     color: var(--color-02);
 }
 
 .about-tech > p {
     color: var(--color-00);
+    text-align: center;
     font-size: 1rem;
     font-weight: 700;
 }
