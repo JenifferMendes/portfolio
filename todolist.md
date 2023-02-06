@@ -17,6 +17,7 @@
 
 
 
+- [ ] arrumar o contato.
 - [ ] media query - tablet
   - [x] home
   - [x] sobre
@@ -32,6 +33,7 @@
 - [ ] arrumar tamanho das imagens
 - [ ] colocar textinhos bonitinhos nas descrições das coisas.
 - [ ] criar uma tag para slider
+- [ ] imagens pro iphone
 
 
 
