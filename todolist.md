@@ -32,3 +32,21 @@
 - [ ] arrumar tamanho das imagens
 - [ ] colocar textinhos bonitinhos nas descrições das coisas.
 - [ ] criar uma tag para slider
+
+
+
+
+---- 
+```javascript
+const iosPlatforms = ['iPhone', 'iPad', 'iPod'];
+const platform = window.navigator.userAgent;
+console.log(platform)
+
+if (platform.match(iosPlatforms)) {
+    alert("é burgues safado");
+} else {
+    alert("oi pessoa feliz");
+    // koihi.style.backgroundAttachment = "none";
+    // teste.style.background = "#FFFFFF";
+}
+```
