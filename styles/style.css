@@ -127,7 +127,7 @@ html {
 .left .content {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .left {
@@ -153,13 +153,12 @@ html {
     display: block;
     font-family: var(--font1);
     font-size: 4.5rem;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.891);
+    text-shadow: 2px 2px 1px rgb(0 0 0)
 }
 
 .main-p {
     font-size: 1.5rem;
     font-weight: 500;
-    margin-left: 30px;
     color: var(--color-08);
 }
 
@@ -307,7 +306,6 @@ html {
 
 .project-title {
     width: fit-content;
-
     text-align: center;
     font-size: 2rem;
     border-bottom: 1px solid var(--color-09);
@@ -323,13 +321,14 @@ html {
 }
 
 .project-images {
+    width: min(95%, 500px);
     display: flex;
     justify-content: center;
     padding: 10px;
 }
 
 .container-images-slides {
-    width: 300px;
+    width: min(95%, 350px);
     height: 300px;
     overflow: hidden;
     margin: 0 auto;
@@ -391,7 +390,8 @@ input {
 .project-image-portrait {
     width: 150px;
     height: 300px;
-    margin: 0 10px;
+    padding: 0 5px;
+    /* margin: 0 10px; */
     border-radius: 10px;
 }
 
@@ -414,11 +414,12 @@ input {
     color: white;
     width: 100px;
     background-color: var(--color-09);
-    margin: 0 10px;
+    margin: 0 10px 20px;
     padding: 10px;
     border: 1px solid var(--color-09);
     border-radius: 10px;
     font-size: 0.8rem;
+    box-shadow: 1px 1px 8px var(--color-09);
 }
 
 .project-link:hover {
@@ -433,7 +434,6 @@ input {
 }
 
 .project-div-flex1 {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -483,15 +483,21 @@ input {
     margin-bottom: 30px;
 }
 
+.contact-card {
+    background-color: rgba(255, 255, 255, 0.659);
+    margin: 30px auto;
+    width: min(90%, 750px);
+    padding: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.256);
+}
+
 .contact-link {
     display: flex;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto auto; */
 }
 
 .contact-detail {
@@ -506,9 +512,8 @@ input {
     background-color: #BDFFF8;
     border-radius: 10%;
     padding: 10px;
-    box-shadow: 0px 0px 10px var(--color-07);
+    box-shadow: 0px 0px 16px var(--color-07);
     width: 120px;
-    
 }
 
 .contact-detail:hover {

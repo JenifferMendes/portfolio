@@ -41,13 +41,10 @@
         display: block;
         font-family: var(--font1);
         font-size: 5.5rem;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.891);
-
     }
 
     .main-p {
         font-size: 1.5rem;
-        margin-left: 70px;
         color: var(--color-09);
     }
 
@@ -83,8 +80,6 @@
         padding: 100px 0;
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap;
-        justify-content: space-evenly; */
     }
 
     .about-card {
@@ -146,6 +141,7 @@
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 20px;
+        padding: 0 30px;
     }
 
     .project-card:nth-child(even) .project-card-flex {
@@ -153,16 +149,18 @@
     }
     
     .project-div-flex1 {
+        width: 50%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
     }
 
     .project-div-flex2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 40%;
+        align-items: center;
+        width: 50%;
     }
 
 
@@ -173,9 +171,6 @@
     .image-koicute {
         display: block;
         background-image: url(../imagens/koifofa.png);
-        /* background-size: contain;
-        background-repeat: no-repeat;
-        background-position: bottom center; */
         width: 400px;
         height: 400px;
     }
@@ -223,9 +218,7 @@
 
     .menu {
         display: flex;
-        justify-content: flex-end ;
-        padding-right: 150px;
-         
+        justify-content: flex-end ;       
     }
 
     .menu-option {
@@ -247,9 +240,6 @@
         width: 80px;
         height: 80px;
     }
-    /* .about-card {
-
-    } */
 
     .container-projects {
         display: flex;

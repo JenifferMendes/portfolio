@@ -1,5 +1,5 @@
 function clickMenu() {
-    if (window.matchMedia("(max-width: 768px)").matches){
+    if (window.matchMedia("(max-width: 1200px)").matches){
         if (options.style.display == "block") {
             options.style.display = "none";
         } else {

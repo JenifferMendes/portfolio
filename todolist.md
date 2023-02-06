@@ -8,9 +8,17 @@
 - [x] tech no about
 
 06/02
+- [x] bug do tablet
+- [x] colocar sombra nos botoes dos links nos projetos
+- [x] centralizar o texto do welcome
+
+
+
 - [ ] media query - tablet (começando)
+- [ ] arrumar tamanho das imagens
   - [ ] colocar os botoes embaixo do texto.
 - [ ] media query - pc/telas grandes
+- [ ] arrumar o bug dos links dos contatos
 - [ ] marcar no navegador qual slide estou
 - [ ] colocar textinhos bonitinhos nas descrições das coisas.
 - [ ] criar uma tag para slider
