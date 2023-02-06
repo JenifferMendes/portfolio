@@ -211,6 +211,12 @@ html {
     flex-direction: column;
     justify-content: space-between;
 }
+
+.about-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .about-card-tech {
     width: min(90%, 1200px);
     background-color: rgba(255, 255, 255, 0.659);
@@ -224,13 +230,10 @@ html {
     align-items: center;
 }
 
-.about-tech-grid {
+.about-tech-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto auto; */
     margin-top: 20px;
 }
 
@@ -244,6 +247,7 @@ html {
 }
 
 .about-title {
+    width: fit-content;
     text-align: center;
     font-size: 2rem;
     margin-top: 10px;
@@ -255,6 +259,7 @@ html {
 }
 
 .about-title-tech {
+    width: fit-content;
     text-align: center;
     font-size: 1.4rem;
     border-bottom: 1px solid var(--color-00);
@@ -302,6 +307,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center
 }
 
 .project-title {
@@ -314,9 +320,10 @@ html {
 }
 
 .project-sub-title {
+    width: fit-content;
     color: var(--color-09);
     text-align: center;
-    margin: 20px 60px;
+    margin: 20px 0;
     border-bottom: 1px solid var(--color-09);
 }
 
