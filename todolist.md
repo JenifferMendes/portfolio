@@ -16,23 +16,28 @@
 - [x] titulos arrumados
 
 
-
-- [ ] arrumar o contato.
-- [ ] media query - tablet
+07/02
+- [x] arrumar o bug dos links dos contatos
+- [x] media query - tablet
   - [x] home
   - [x] sobre
   - [x] projetos
-  - [ ] contato
-- [ ] media query - pc/telas grandes
+  - [x] contato
+- [x] media query - pc/telas grandes
   - [x]  home
   - [x] sobre
   - [x] projetos
-  - [ ] contato
-- [x] arrumar o bug dos links dos contatos
+  - [x] contato
+- [x] arrumar o contato css.
+
+
+- [ ] arrumar padding dos card
 - [ ] marcar no navegador qual slide estou
 - [ ] arrumar tamanho das imagens
 - [ ] colocar textinhos bonitinhos nas descrições das coisas.
 - [ ] criar uma tag para slider
+- [ ] arrumar titulo do tecnologia no about (ver o mobile)
+- [ ] separar o css :'(
 - [ ] imagens pro iphone
 
 
