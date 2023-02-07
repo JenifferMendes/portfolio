@@ -163,6 +163,24 @@
         width: 50%;
     }
 
+    .contact {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contact-flex1 {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .contact-flex2 {
+        margin: 0 auto;
+    }
+
+    .contact-detail {
+       font-size: 1.2rem;
+       width: 100px;
+    }
 
 }
 
@@ -251,5 +269,9 @@
         flex-direction: row;
     }
 
+    .contact-detail {
+        font-size: 1.5rem;
+        width: 120px;
+     }
     
 }

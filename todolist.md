@@ -28,7 +28,7 @@
   - [x] sobre
   - [x] projetos
   - [ ] contato
-- [ ] arrumar o bug dos links dos contatos
+- [x] arrumar o bug dos links dos contatos
 - [ ] marcar no navegador qual slide estou
 - [ ] arrumar tamanho das imagens
 - [ ] colocar textinhos bonitinhos nas descrições das coisas.
