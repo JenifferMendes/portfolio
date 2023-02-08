@@ -167,10 +167,13 @@
         flex-direction: row-reverse;
         justify-content: space-around;
         align-items: center;
+        padding: 130px 0 60px 30px;
     }
+
     .contact-flex1 {
         width: 40%;
         margin: 0 auto;
+        padding: 0;
     }
     
     .contact-flex2 {
@@ -272,6 +275,7 @@
     .contact-detail {
         font-size: 1.5rem;
         width: 120px;
+        margin: 50px;
      }
     
 }

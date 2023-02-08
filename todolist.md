@@ -30,13 +30,16 @@
   - [x] contato
 - [x] arrumar o contato css.
 
-
+08/02
 - [ ] arrumar padding dos card
-- [ ] marcar no navegador qual slide estou
+- [ ] foto da koiziny no contatos
+- [ ] no "hover/active" das fotos
+- [ ] arrumar titulo do tecnologia no about (ver o mobile)
 - [ ] arrumar tamanho das imagens
 - [ ] colocar textinhos bonitinhos nas descrições das coisas.
 - [ ] criar uma tag para slider
-- [ ] arrumar titulo do tecnologia no about (ver o mobile)
+- [ ] marcar no navegador qual slide estou
+- [ ] decidir se crio um slider pra todos os projetos
 - [ ] separar o css :'(
 - [ ] imagens pro iphone
 

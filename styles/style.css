@@ -59,7 +59,11 @@ html {
     background-color: var(--color-03);
     border-radius: 40%;
     border: 1px solid var(--color-01);
-    box-shadow: 3px 3px 1px var(--color-01);
+    box-shadow: 0px 3px 0px var(--color-01);
+}
+
+.home:active {
+    transform: scale(0.9);
 }
 
 .header {
@@ -176,17 +180,18 @@ html {
 }
 
 .image-koihi{
+    display:block;
     background-image: url(../imagens/koioi.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
     width: 100%;
     height: 100%;  
 }
 
 @supports (background-attachment: fixed) {
     .image-koihi {
-        background-size: contain;
         background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: bottom right;
     }
 }
 
@@ -312,7 +317,7 @@ html {
     background-color: rgba(255, 255, 255, 0.659);
     margin: 30px auto;
     width: min(90%, 750px);
-    padding: 10px 0;
+    padding: 10px 0x;
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.256);
     display: flex;
@@ -339,9 +344,12 @@ html {
 }
 
 .project-images {
-    width: min(95%, 500px);
+    width: min(95%, 350px);
+    width: 100%;
+    height: 350px;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 10px;
 }
 
@@ -407,13 +415,14 @@ html {
 
 .project-image-portrait {
     width: 150px;
+    width: 100%;
     height: 300px;
     padding: 0 5px;
     border-radius: 10px;
     transition: transform 200ms ease-in-out;
 }
 
-.project-image-portrait:hover {
+.project-image-portrait:active {
     transform: scale(1.3);
 }
 
@@ -450,9 +459,8 @@ html {
 }
 
 .project-card-flex {
-    /* display: flex;
-    justify-content: space-evenly; */
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .project-div-flex1 {
@@ -460,6 +468,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 /* .project-div-flex2 {
@@ -476,6 +485,8 @@ html {
     text-indent: 30px;
     font-size: 0.9rem;
     color: var(--color-00);
+    margin: 0 auto;
+    width: 100%;
 }
 
 .project-tech {
@@ -488,7 +499,7 @@ html {
 .contact {
     background-color: var(--color-04);
     width: 100%;
-    padding: 60px 0;
+    padding: 100px 0 60px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -558,11 +569,15 @@ html {
     transform: scale(0.8);
 }
 
+.contact-flex1 {
+    padding: 30px;
+}
+
 .contact-flex2 {
     position: relative;
     width: min(70%, 350px);
     padding-bottom: 50px;
-    height: 650px;
+    height: 630px;
 }
 .contact-paper-back {
 
@@ -583,7 +598,6 @@ html {
     height: 92%;
     top: 0;
     padding: 20px;
-
 }
 
 .label-form {
