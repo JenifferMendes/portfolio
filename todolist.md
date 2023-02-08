@@ -37,7 +37,9 @@
 - [x] arrumar titulo do tecnologia no about (ver o mobile) - so para o menorzinho.
 - [x] no "hover/active" das fotos
 - [x] efeito nos itens do menu
-- [ ] 
+- [c] form funcionando
+
+09/02 
 - [ ] arrumar tamanho das imagens
 - [ ] colocar textinhos bonitinhos nas descrições das coisas.
 - [ ] criar uma tag para slider
