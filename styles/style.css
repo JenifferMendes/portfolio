@@ -109,7 +109,7 @@ html {
     font-size: 2rem;
     text-align: center;
     padding: 5px;
-    /* border-top: 1px solid var(--color-01); */
+    border-top: 1px solid var(--color-01);
     padding: 10px;
 }
 

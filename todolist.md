@@ -36,7 +36,8 @@
 - [x] imagens pro iphone
 - [x] arrumar titulo do tecnologia no about (ver o mobile) - so para o menorzinho.
 - [x] no "hover/active" das fotos
-- [ ] efeito nos itens do menu
+- [x] efeito nos itens do menu
+- [ ] 
 - [ ] arrumar tamanho das imagens
 - [ ] colocar textinhos bonitinhos nas descrições das coisas.
 - [ ] criar uma tag para slider
