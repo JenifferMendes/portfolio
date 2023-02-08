@@ -169,10 +169,17 @@ html {
 }
 
 .right {
+    position: relative;
     width: 100%;
     height: 25%;
     background-color: var(--color-05);
     border-bottom: 1px solid var(--color-01);
+}
+.img-right {
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    height: 100%;
 }
 
 .image-koicute {
@@ -181,16 +188,19 @@ html {
 
 .image-koihi{
     display:block;
-    background-image: url(../imagens/koioi.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom right;
     width: 100%;
     height: 100%;  
 }
 
 @supports (background-attachment: fixed) {
+    .img-right {
+        display:none;
+    }
     .image-koihi {
+        background-image: url(../imagens/koioi.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
         background-attachment: fixed;
     }
 }
@@ -655,7 +665,7 @@ footer {
     margin: 0 auto;
 }
 
-.contact-koihi {
+/* .contact-koihi {
     background-image: url(../imagens/koioi.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -665,7 +675,7 @@ footer {
     position: fixed;
     bottom: 40px;
     right:40;
-}
+} */
 
 
 /* .greedy-nav .visible-links a {
