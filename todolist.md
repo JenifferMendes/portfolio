@@ -31,17 +31,17 @@
 - [x] arrumar o contato css.
 
 08/02
-- [ ] arrumar padding dos card
-- [ ] foto da koiziny no contatos
-- [ ] no "hover/active" das fotos
-- [ ] arrumar titulo do tecnologia no about (ver o mobile)
+- [x] arrumar padding dos card
+- [x] foto da koiziny no contatos - não vai ter
+- [x] imagens pro iphone
+- [x] arrumar titulo do tecnologia no about (ver o mobile) - so para o menorzinho.
+- [x] no "hover/active" das fotos
 - [ ] arrumar tamanho das imagens
 - [ ] colocar textinhos bonitinhos nas descrições das coisas.
 - [ ] criar uma tag para slider
 - [ ] marcar no navegador qual slide estou
 - [ ] decidir se crio um slider pra todos os projetos
 - [ ] separar o css :'(
-- [ ] imagens pro iphone
 
 
 
