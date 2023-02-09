@@ -37,15 +37,18 @@
 - [x] arrumar titulo do tecnologia no about (ver o mobile) - so para o menorzinho.
 - [x] no "hover/active" das fotos
 - [x] efeito nos itens do menu
-- [c] form funcionando
+- [x] form funcionando
 
 09/02 
-- [ ] arrumar tamanho das imagens
-- [ ] colocar textinhos bonitinhos nas descrições das coisas.
+- [x] colocar textinhos bonitinhos nas descrições das coisas.
+- [x] criar o elemento para selecionar os idiomas no perfil.
 - [ ] criar uma tag para slider
-- [ ] marcar no navegador qual slide estou
 - [ ] decidir se crio um slider pra todos os projetos
+- [ ] componentizar os elementos.
 - [ ] separar o css :'(
+- [ ] arrumar tamanho das imagens
+- [ ] problema para resolver na escolha dos idiomas
+
 
 
 
