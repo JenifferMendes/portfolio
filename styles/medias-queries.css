@@ -250,7 +250,7 @@
         position: relative;
         border: none;
         margin: 0 40px;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         font-family: var(--font3);
         font-weight: 900;
         padding: 25px;
@@ -290,6 +290,11 @@
         height: 80px;
     }
 
+    .about, .project {
+        justify-content: center;
+        height: 100vh;
+    }
+
     .container-projects {
         display: flex;
         gap: 40px;
@@ -299,11 +304,19 @@
     .project-card:nth-child(even) .project-card-flex {
         flex-direction: row;
     }
+    
+    .contact {
+       height: 100vh;
+    }
 
     .contact-detail {
         font-size: 1.5rem;
         width: 120px;
         margin: 50px;
-     }
+    }
+    
+    .language {
+        display: none;
+    }
     
 }
