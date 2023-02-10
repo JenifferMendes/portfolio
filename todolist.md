@@ -42,14 +42,16 @@
 09/02 
 - [x] colocar textinhos bonitinhos nas descrições das coisas.
 - [x] criar o elemento para selecionar os idiomas no perfil.
+
+10/02
+- [x] separar o css :'(
+- [x] problema para resolver na escolha dos idiomas no pc
+- [x] decidir se crio um slider pra todos os projetos(não vou usar)
+
+- [ ] problema para resolver na escolha dos idiomas no mobile/tablet
 - [ ] criar uma tag para slider
-- [ ] decidir se crio um slider pra todos os projetos
 - [ ] componentizar os elementos.
-- [ ] separar o css :'(
 - [ ] arrumar tamanho das imagens
-- [ ] problema para resolver na escolha dos idiomas
-
-
 
 
 

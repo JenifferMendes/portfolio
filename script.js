@@ -10,7 +10,7 @@ function clickMenu() {
 }
 
 window.addEventListener("scroll", () => {
-    let home = document.querySelector("#homeButton");
+    let homeButton = document.querySelector("#homeButton");
     if (window.scrollY > 100) {
         homeButton.style.display = "block";
     } else {
