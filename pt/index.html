@@ -40,11 +40,11 @@
         <header class="header">
             <nav id="navbar" class="navbar">
                 <span onclick="clickMenu()" class="material-symbols-outlined">menu</span>
-                <ul id="options" class="menu" onclick="clickMenu()">
-                    <li><a class="menu-option" href="#homeSection">Home</a></li>
-                    <li><a class="menu-option" href="#aboutSection">Sobre</a></li>
-                    <li><a class="menu-option" href="#projectSection">Projetos</a></li>
-                    <li><a class="menu-option" href="#contactSection">Contato</a></li>
+                <ul id="options" class="menu" >
+                    <li><a onclick="clickMenu()" class="menu-option" href="#homeSection">Home</a></li>
+                    <li><a onclick="clickMenu()" class="menu-option" href="#aboutSection">Sobre</a></li>
+                    <li><a onclick="clickMenu()" class="menu-option" href="#projectSection">Projetos</a></li>
+                    <li><a onclick="clickMenu()" class="menu-option" href="#contactSection">Contato</a></li>
                     <li>
                         <div class="menu-option">
                             <span class="material-symbols-outlined">language</span>
@@ -52,10 +52,10 @@
                         </div>
                         <ul id="menuLanguage" class="menu-language">
                             <li>
-                                <a class="language" href="../en/index.html">English</a>
+                                <a onclick="clickMenu()" class="language" href="../en/index.html">English</a>
                             </li>
                             <li>
-                                <a class="language" href="../kr/index.html">한국어</a>
+                                <a onclick="clickMenu()" class="language" href="../kr/index.html">한국어</a>
                             </li>
                         </ul>
                     </li>
@@ -209,7 +209,7 @@
         <div class="contact-flex1">
             <div class="contact-card">
                 <div class="contact-title-social">
-                    <h1 class="contact-title"></h1>
+                    <h1 class="contact-title">Entre em contato</h1>
                     <p class="contact-text">Você pode me encontrar em:</p>
                 </div>
                 <div class="contact-link">
