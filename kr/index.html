@@ -36,14 +36,15 @@
 </head>
 
 <body>
-    <section>
+    <section id="homeSection">
         <header class="header">
             <nav id="navbar" class="navbar">
                 <span onclick="clickMenu()" class="material-symbols-outlined">menu</span>
                 <ul id="options" class="menu" onclick="clickMenu()">
-                    <li><a class="menu-option" href="#about">About</a></li>
-                    <li><a class="menu-option" href="#project">Projets</a></li>
-                    <li><a class="menu-option" href="#contact">Contact</a></li>
+                    <li><a class="menu-option" href="#homeSection">Home</a></li>
+                    <li><a class="menu-option" href="#aboutSection">About</a></li>
+                    <li><a class="menu-option" href="#projectSection">Projets</a></li>
+                    <li><a class="menu-option" href="#contactSection">Contact</a></li>
                     <li>
                         <div class="menu-option">
                             <span class="material-symbols-outlined">language</span>
@@ -76,7 +77,7 @@
             <div id="koihi" class="image-koihi"></div>
         </div>
     </section>
-    <section id="about" class="about">
+    <section id="aboutSection" class="about">
         <div class="about-card">
             <img class="image-jeniffer" src="../imagens/jeniffer.jpg" alt="foto de Jeniffer Mendes">
             <div class="about-information">
@@ -119,7 +120,7 @@
             </div>
         </div>
     </section>
-    <section id="project" class="project">
+    <section id="projectSection" class="project">
         <h1 class="project-title">Principais Projetos</h1>
         <div class="container-projects">
             <div class="project-card">
@@ -204,7 +205,7 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="contact">
+    <section id="contactSection" class="contact">
         <div class="contact-flex1">
             <div class="contact-card">
                 <div class="contact-title-social">
@@ -262,7 +263,7 @@
             </div>
         </div>
     </section>
-    <button id="home" class="home">
+    <button id="homeButton" class="home">
         <span class="material-symbols-outlined">arrow_upward</span>
     </button>
     <script src="../script.js"></script>
