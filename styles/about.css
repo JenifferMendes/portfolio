@@ -1,0 +1,106 @@
+.about {
+    background-color: var(--color-02);
+    width: 100%;
+    padding: 100px 0;
+}
+
+.image-jeniffer {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px var(--color-01);
+}
+
+.about-card {
+    background-color: rgba(255, 255, 255, 0.659);
+    margin: 30px auto;
+    width: min(90%, 1200px);
+    padding: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.256);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-card-tech {
+    width: min(90%, 1200px);
+    background-color: rgba(255, 255, 255, 0.659);
+    margin: 30px auto;
+    padding: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.256);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-tech-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 90px;
+}
+
+.about-title {
+    width: fit-content;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+    font-family: var(--font3);
+    font-weight: 900;
+    margin: 0 70px;
+    border-bottom: 1px solid var(--color-00);
+    color: var(--color-00);
+}
+
+.about-title-tech {
+    width: fit-content;
+    text-align: center;
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--color-00);
+    color: var(--color-00);
+    margin-top: 20px;
+}
+
+
+.about-tech > i, .about-tech > span {
+    font-size: 3rem; 
+    color: var(--color-02);
+}
+
+.about-tech > p {
+    color: var(--color-00);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.about-text {
+    text-align: justify;
+    padding: 20px;
+    text-indent: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-00);
+}

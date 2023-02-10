@@ -10,14 +10,14 @@ function clickMenu() {
 }
 
 window.addEventListener("scroll", () => {
-    let home = document.querySelector("#home");
+    let home = document.querySelector("#homeButton");
     if (window.scrollY > 100) {
-        home.style.display = "block";
+        homeButton.style.display = "block";
     } else {
-        home.style.display = "none";
+        homeButton.style.display = "none";
     }
 })
 
-home.addEventListener("click", () => {
+homeButton.addEventListener("click", () => {
     window.scrollTo(0,0);
 })
