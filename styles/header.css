@@ -52,6 +52,7 @@
 
 .menu li ul li {
     background-color: var(--color-03);
+    
 }
 .menu li ul li:hover {
     background-color: var(--color-02);

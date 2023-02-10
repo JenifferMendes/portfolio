@@ -46,50 +46,71 @@
         align-items: flex-end;
     }
 
-
     .menu {
         display: flex;
         justify-content: flex-end ;       
     }
-
-    .menu li:hover ul, .menu li.over ul {
-        display: block;
-        width: 120px;
-    }
-
+    
     .menu-option {
         display: block;
         position: relative;
         border: none;
         margin: 0 40px;
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         font-family: var(--font3);
         font-weight: 900;
-        padding: 25px;
+        padding: 20px;
         text-align: left;
     }
-    
-    .menu li ul li {
-        text-align: left;
+
+    .menu li:hover ul, .menu li.over ul {
+        display: block;
+        top: 10x;
+        width: 150px;
+        list-style-type: none;
+        border-radius: 10px;
+    }
+
+    .menu li ul  {
         background-color: var(--color-03);
+        border: 1px solid var(--color-02);
+        top: 50px;
     }
+
     .menu li ul li:hover {
         background-color: var(--color-02);
+        border: 2px solid var(--color-01);
+    }
+
+    .menu li ul li:first-of-type {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .menu li ul li:last-of-type {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .menu li ul li:hover:first-of-type {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .menu li ul li:hover:last-of-type {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     
     .menu-option:hover {
         background-color: transparent;
-    }
-
-    .language{
-        text-align: left;
     }
     
     .menu-option:before {
         content: "";
         position: absolute;
         left: 0;
-        bottom: 20px;
+        bottom: 15px;
         height: 4px;
         background: var(--color-01);
         width: 100%;
@@ -139,8 +160,4 @@
         width: 120px;
         margin: 50px;
     }
-    
-    .language {
-        display: none;
-    }  
 }
