@@ -40,7 +40,7 @@
 
 .menu li ul {
     position: absolute;
-    top: 64px;
+    top: 40px;
     left: 0;
     display: none;
 }
