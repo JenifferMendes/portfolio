@@ -47,11 +47,14 @@
 - [x] separar o css :'(
 - [x] problema para resolver na escolha dos idiomas no pc
 - [x] decidir se crio um slider pra todos os projetos(não vou usar)
+- [x] problema para resolver na escolha dos idiomas no mobile/tablet
 
-- [ ] problema para resolver na escolha dos idiomas no mobile/tablet
-- [ ] criar uma tag para slider
+
+11/02
+- [x] arrumar tamanho do menu.
 - [ ] componentizar os elementos.
-- [ ] arrumar tamanho das imagens
+- [ ] arrumar tamanho das imagens.
+- [ ] arrumar escolha de idiomas pro iphone :clown:
 
 
 
