@@ -63,7 +63,7 @@
     }
 
     .navbar>span {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .home {
@@ -71,7 +71,7 @@
         height: 80px;
     }
 
-    .home>span {
+    .home > span {
         font-size: 3rem;
     }
 
