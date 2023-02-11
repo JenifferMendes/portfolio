@@ -1,24 +1,35 @@
 const cards = document.querySelectorAll("card");
 for (const card of cards) {
-    card.classList.add("project-card");
+    card.classList.add("card");
     const contentCard = card.innerHTML
     card.innerHTML = ""
     const image = card.attributes.img?.value;
 
     if (image) {
         const elementImage = document.createElement('img');
-        elementImage.classList.add("image-jeniffer");
+        elementImage.classList.add("image-card");
         elementImage.setAttribute("src", image);
-        card.appendChild(elementImage);
+        const containerImage = document.createElement('div');
+        containerImage.classList.add("container-image")
+        containerImage.appendChild(elementImage)
+        card.appendChild(containerImage);
     }
+
+    const containerAllContent = document.createElement("div")
+    containerAllContent.classList.add("container")
     
     const title = card.attributes.title.value;
     const elementTitle = document.createElement('h2');
     elementTitle.innerText = title;
-    card.appendChild(elementTitle);
+    elementTitle.classList.add("title-card");
+    containerAllContent.appendChild(elementTitle);
 
     const elementContent = document.createElement('div')
+    elementContent.classList.add("content")
     elementContent.innerHTML = contentCard;
-    card.appendChild(elementContent);
+
+    containerAllContent.appendChild(elementContent);
+
+    card.appendChild(containerAllContent);
 }
 
