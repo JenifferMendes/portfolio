@@ -63,6 +63,10 @@
         text-align: left;
     }
 
+    .menu-option > span {
+        font-size: 1.5rem;
+    }
+
     .menu li:hover ul, .menu li.over ul {
         display: block;
         top: 10x;
@@ -73,34 +77,45 @@
 
     .menu li ul  {
         background-color: var(--color-03);
-        border: 1px solid var(--color-02);
         top: 50px;
+    }
+    
+    .menu li ul li {
+        border: 2px solid transparent;
     }
 
     .menu li ul li:hover {
         background-color: var(--color-02);
-        border: 2px solid var(--color-01);
+        transition: 0.5s;
+        
+    }
+    .language:hover {
+        font-size: 1.1rem;
     }
 
     .menu li ul li:first-of-type {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-
+    
     .menu li ul li:last-of-type {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-
+    
     .menu li ul li:hover:first-of-type {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        border: 2px solid var(--color-01);
+ 
     }
 
     .menu li ul li:hover:last-of-type {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        border: 2px solid var(--color-01);
     }
+    
     
     .menu-option:hover {
         background-color: transparent;

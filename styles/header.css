@@ -40,7 +40,7 @@
 
 .menu li ul {
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 0;
     display: none;
 }
@@ -68,12 +68,17 @@
     padding: 5px;
 }
 
+.menu-option >  span {
+    font-size: 1rem;
+}
+
 .language {
     display: block;
     text-decoration: none;
     color: var(--color-01);
-    font-size: 1rem;
-    font-weight: 800;
+    font-family: var(--color-03);
+    font-size: 0.8rem;
+    font-weight: 900;
     text-align: center;
     padding: 10px;
 }

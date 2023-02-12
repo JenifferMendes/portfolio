@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
 :root {
     --font1: 'Cookie', cursive;
@@ -22,6 +17,13 @@
     --color-10: #FFF1E3;
     --color-06: #f7e0b4;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .hyphenate {
     hyphens: auto;
     -webkit-hyphens: auto;
@@ -40,8 +42,7 @@
 
 
 html {
-    scroll-behavior: smooth;
-    /* overflow-x: hidden; */
+    scroll-behavior: smooth; 
 }
 
 body,
@@ -49,7 +50,7 @@ html {
     width: 100%;
     height: 100vh;
     font-family: var(--font3);
-    background-color: var(--color-03);
+    background-color: var(--color-03-);
 }
 
 .home {
