@@ -16,8 +16,7 @@
 
     .left {
         width: 60%;
-        height: 90%;
-        margin-top: 40px;
+        height: 95%;
         border: none;
         display: flex;
         align-items: center;
@@ -37,9 +36,8 @@
     } 
 
     .right {
-        margin-top: 40px;
         width: 40%;
-        height: 90%;
+        height: 95%;
         border: none;
         display: flex;
         justify-content: center;
@@ -141,7 +139,7 @@
         transform: scaleX(1)
     }
 
-    .navbar>span {
+    .navbar > span {
         display: none;
         font-size: 4rem;
     }
@@ -161,6 +159,10 @@
         gap: 40px;
         padding: 0 5px;
     }
+
+    /* .project-image-portrait  {
+        width:300px;
+    } */
 
     .project-card:nth-child(even) .project-card-flex {
         flex-direction: row;

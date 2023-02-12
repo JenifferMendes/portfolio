@@ -6,6 +6,7 @@
 }
 
 .navbar {
+    width: 100%;
     position: relative;
     background-color: var(--color-03);
     text-align: right;
