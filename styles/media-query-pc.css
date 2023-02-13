@@ -1,47 +1,15 @@
 @media screen and (min-width: 1200px) {
     .image-koicute {
-        display: block;
-        background-image: url(../imagens/koifofa.png);
         width: 400px;
         height: 400px;
-    }
-
-    .image-koihi {
-        display: none;
     }
 
     .welcome {
         flex-direction: row-reverse;
     }
 
-    .left {
-        width: 60%;
-        height: 95%;
-        border: none;
-        display: flex;
-        align-items: center;
-    }
-
-   .main-h1 {
-        font-size: 4rem;
-    }
-
     .cursive {
-        font-family: var(--font1);
-        font-size: 9.5rem;
-    }
-
-    .main-p {
-        font-size: 2rem;
-    } 
-
-    .right {
-        width: 40%;
-        height: 95%;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        font-size: 8rem;
     }
 
     .menu {
@@ -50,13 +18,10 @@
     }
     
     .menu-option {
-        display: block;
         position: relative;
-        border: none;
         margin: 0 40px;
         font-size: 1.3rem;
-        font-family: var(--font3);
-        font-weight: 900;
+        font-weight: 600;
         padding: 20px;
         text-align: left;
     }
@@ -66,8 +31,7 @@
     }
 
     .menu li:hover ul, .menu li.over ul {
-        display: block;
-        top: 10x;
+        top: 50px;
         width: 150px;
         list-style-type: none;
         border-radius: 10px;
@@ -75,7 +39,6 @@
 
     .menu li ul  {
         background-color: var(--color-03);
-        top: 50px;
     }
     
     .menu li ul li {
@@ -113,8 +76,7 @@
         border-bottom-right-radius: 10px;
         border: 2px solid var(--color-01);
     }
-    
-    
+        
     .menu-option:hover {
         background-color: transparent;
     }
@@ -141,7 +103,6 @@
 
     .navbar > span {
         display: none;
-        font-size: 4rem;
     }
 
     .home {
@@ -159,10 +120,6 @@
         gap: 40px;
         padding: 0 5px;
     }
-
-    /* .project-image-portrait  {
-        width:300px;
-    } */
 
     .project-card:nth-child(even) .project-card-flex {
         flex-direction: row;
