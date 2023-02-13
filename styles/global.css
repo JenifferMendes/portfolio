@@ -1,16 +1,19 @@
 @charset "utf-8";
 
 :root {
+    --font0: 'Clicker Script', cursive;
     --font1: 'Cookie', cursive;
     --font2: 'Roboto', sans-serif;
     --font3: 'Noto Sans', sans-serif;
+    --font4: 'Rancho', cursive;
     --color-00: #593959;
     --color-01: #D759D9;
     --color-02: #F1A7F2;
     --color-03: #EDC4F2;
     --color-04: #8BD9D1;
     --color-07: #4C8C86;
-    --color-08: #305955;    
+    --color-08: #305955;
+    --color-11: #1E5953;    
     --color-05: #F2DAC4;
     --color-09: #59432E;
     --color-10: #FFF1E3;
@@ -56,7 +59,7 @@ html {
     display: none;
     position: fixed;
     bottom: 15px;
-    left: 10px;
+    right: 15px;
     width: 50px;
     height: 50px;
     color: var(--color-01);
