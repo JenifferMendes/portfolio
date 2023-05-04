@@ -72,3 +72,9 @@ if (platform.match(iosPlatforms)) {
     // teste.style.background = "#FFFFFF";
 }
 ```
+
+
+04/05 (ideias para acrescentar)
+- [ ] ter experiencia usuários
+- [ ] noturno/diurno
+- [ ] 
